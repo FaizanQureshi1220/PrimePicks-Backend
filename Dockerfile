@@ -11,6 +11,7 @@ COPY . .
 
 # Generate Prisma client
 RUN npx prisma generate
+RUN npx prisma migrate deploy
 
 
 # Expose port
